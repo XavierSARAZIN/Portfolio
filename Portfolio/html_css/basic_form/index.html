@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <h1 id="title">Registration Form</h1>
+    <p id="description">Please fill out this form with the required information</p>
+    <form id="survey-form" method="post" action='https://register-demo.freecodecamp.org'>
+        <fieldset>
+            <legend>Info:</legend>
+            <label for="name-label" id="name-label">Enter your name: <input placeholder="Name" id="name"
+                    name="name-label" type="text" required /></label>
+            <label for="email-label" id="email-label">Enter your email: <input placeholder="Email" id="email"
+                    name="email-label" type="email" required /></label>
+            <label for="number-label" id="number-label">Enter your age: <input placeholder="Age" id="number"
+                    name="number-label" type="number" min="18" max="120"></input></label>
+        </fieldset>
+        <fieldset>
+            <label for="dropdown">How did you hear about us?
+                <select id="dropdown" name="dropdown">
+                    <option value="">(select one)</option>
+                    <option value="1">freeCodeCamp News</option>
+                    <option value="2">freeCodeCamp YouTube Channel</option>
+                    <option value="3">freeCodeCamp Forum</option>
+                    <option value="4">Other</option>
+                </select>
+        </fieldset>
+        <fieldset>
+            <legend>Bio:</legend>
+            <label for="bio">
+                <textarea id="bio" name="bio" rows="3" cols="30" placeholder="About you..."></textarea>
+            </label>
+        </fieldset>
+        <fieldset>
+            <legend>Account type (required)</legend>
+            <label for="personal-account"><input id="personal-account" type="radio" name="account-type" class="inline"
+                    checked value="1" /> Personal</label>
+            <label for="business-account"><input id="business-account" type="radio" name="account-type" class="inline"
+                    value="2" /> Business</label>
+        </fieldset>
+        <fieldset>
+            <legend>Options</legend>
+            <label for="terms-and-conditions">
+                <input class="inline" value="3" id="terms-and-conditions" type="checkbox" required
+                    name="terms-and-conditions" /> I
+                accept the <a href="https://www.freecodecamp.org/news/terms-of-service/">terms and conditions</a>
+            </label>
+            <label for="news"><input value="4" id="news" type="checkbox" name="news" /> Subscribe
+                newsletter</label>
+            <input id="submit" type="submit" value="Submit" />
+
+        </fieldset>
+    </form>
+</body>

@@ -1,0 +1,26 @@
+@media (max-width: 768px) {
+    li {
+        list-style-type: none;
+    }
+}
+
+nav {
+    background-color: white;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 0 25px 0 black;
+    justify-content: space-between;
+    padding-right: 50px;
+    padding-left: 50px;
+    margin-bottom: 50px;
+    font-style: arial;
+    font-weight: bold;
+}
+
+a {
+    padding: 15px;
+}
